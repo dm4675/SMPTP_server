@@ -44,7 +44,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     rcptto = 'RCPT TO: <bob@yahoo.com>\r\n'
     clientSocket.send(rcptto.encode())
     recv3 = clientSocket.recv(1024).decode()
-    print(recv3)
+    #print(recv3)
     if recv3[:3] != '250':
         #print('250 reply not received from server.')
 
